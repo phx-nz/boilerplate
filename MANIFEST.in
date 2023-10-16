@@ -1,2 +1,0 @@
-graft test
-prune **/__pycache__
