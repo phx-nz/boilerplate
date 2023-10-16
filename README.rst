@@ -38,6 +38,9 @@ To run the unit tests:
 
 Documentation
 -------------
+This project uses `Sphinx`_ to build documentation files.  Source files are
+located in the ``docs`` directory.
+
 To build the documentation locally:
 
 #. Install extra dependencies (you only have to do this once)::
@@ -52,6 +55,7 @@ To build the documentation locally:
 
       make html
 
+Documentation will be built in ``docs/_build/html``.
 
 Releases
 --------
@@ -114,6 +118,7 @@ Steps to build releases are based on `Packaging Python Projects Tutorial`_
 #. Attach the build artefacts to the release.
 #. Click ``Publish release``.
 
-.. _Create a PyPI API token: https://pypi.org/manage/account/token/
-.. _Packaging Python Projects Tutorial: https://packaging.python.org/en/latest/tutorials/packaging-projects/
-.. _tox: https://tox.readthedocs.io/
+.. _Create a PyPI API token: https://pypi.org/manage/account/token
+.. _Packaging Python Projects Tutorial: https://packaging.python.org/en/latest/tutorials/packaging-projects
+.. _Sphinx: https://www.sphinx-doc.org
+.. _tox: https://tox.readthedocs.io
