@@ -18,7 +18,7 @@ dependencies = [
 # Utilities for Project Maintainers
 "build-system" = ["build", "twine"]
 "docs-builder" = ["sphinx", "sphinx_rtd_theme"]
-"test-runner" = ["tox"]
+"test-runner" = ["pytest", "tox"]
 
 [project.urls]
 Documentation = "https://github.com/Python-Tech-Transformation-Workshop/boilerplate"

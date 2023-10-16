@@ -34,7 +34,7 @@ To run the unit tests:
    If you just want to run the tests in the current virtualenv, you can use this
    command instead to get faster feedback::
 
-      python -m unittest
+      python -m pytest
 
 Documentation
 -------------
