@@ -1,5 +1,5 @@
-.. image:: https://github.com/Python-Tech-Transformation-Workshop/boilerplate/actions/workflows/build.yml/badge.svg
-   :target: https://github.com/Python-Tech-Transformation-Workshop/boilerplate/actions/workflows/build.yml
+.. image:: https://github.com/phx-nz/boilerplate/actions/workflows/build.yml/badge.svg
+   :target: https://github.com/phx-nz/boilerplate/actions/workflows/build.yml
 
 Boilerplate
 ===========

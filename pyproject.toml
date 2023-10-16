@@ -21,7 +21,7 @@ dependencies = [
 "test-runner" = ["pytest", "tox"]
 
 [project.urls]
-Documentation = "https://github.com/Python-Tech-Transformation-Workshop/boilerplate"
-Changelog = "https://github.com/Python-Tech-Transformation-Workshop/boilerplate/releases"
-Issues = "https://github.com/Python-Tech-Transformation-Workshop/boilerplate/issues"
-Repository = "https://github.com/Python-Tech-Transformation-Workshop/boilerplate"
+Documentation = "https://github.com/phx-nz/boilerplate"
+Changelog = "https://github.com/phx-nz/boilerplate/releases"
+Issues = "https://github.com/phx-nz/boilerplate/issues"
+Repository = "https://github.com/phx-nz/boilerplate"
