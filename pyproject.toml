@@ -15,10 +15,15 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-# Utilities for Project Maintainers
-"build-system" = ["build", "twine"]
-"docs-builder" = ["sphinx", "sphinx_rtd_theme"]
-"test-runner" = ["pytest", "tox"]
+"dev" = [
+    'black',
+    'build',
+    'pytest',
+    'sphinx',
+    'sphinx_rtd_theme',
+    'tox',
+    'twine'
+]
 
 [project.urls]
 Documentation = "https://github.com/phx-nz/boilerplate"
