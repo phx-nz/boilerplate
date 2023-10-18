@@ -22,4 +22,9 @@ Repository = "https://github.com/phx-nz/boilerplate"
 
 [tool.autohooks]
 mode = "pipenv"
-pre-commit = ["autohooks.plugins.black", "autohooks.plugins.pylint", "autohooks.plugins.pytest", "autohooks.plugins.ruff"]
+pre-commit = [
+    "autohooks.plugins.black",
+    "autohooks.plugins.pylint",
+    "autohooks.plugins.ruff",
+    "autohooks.plugins.pytest"
+]
