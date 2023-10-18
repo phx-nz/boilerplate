@@ -6,19 +6,44 @@ Boilerplate
 Template for new projects.  Fill out this section with a description of the
 purpose/function for your project.
 
+Don't forget to update project details in ``pyproject.toml``, too 😇
+
 Installation
 ------------
-Install the latest stable version via pip::
+Install via pipenv::
 
-    pip install -e '.'
+   pipenv install --dev
+
+
+.. tip::
+
+   The above command installs the project with additional dependencies for
+   developing on your local system.  If you are installing the project onto a
+   non-development environment, use the following command instead::
+
+      pipenv install .
+
+Automatic code quality checks
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+After installing dependencies, run the following command to install git hooks
+to automatically check code quality before allowing commits::
+
+   pipenv run autohooks activate --mode pipenv
+
+Checking code quality
+---------------------
+You can manually run code quality checks with the following commands::
+
+   # Check formatting:
+   pipenv run black [file ...]
+
+   # Linting (run both for best coverage):
+   pipenv run pylint [file ...]
+   pipenv run ruff check --fix [file ...]
 
 Running Unit Tests
 ------------------
 To run the unit tests:
-
-#. Install extra dependencies (you only have to do this once)::
-
-    pip install -e '.[test-runner]'
 
 #. Run tests with the ``tox`` command::
 
@@ -43,10 +68,6 @@ located in the ``docs`` directory.
 
 To build the documentation locally:
 
-#. Install extra dependencies (you only have to do this once)::
-
-      pip install '.[docs-builder]'
-
 #. Switch to the ``docs`` directory::
 
       cd docs
@@ -66,12 +87,8 @@ Steps to build releases are based on `Packaging Python Projects Tutorial`_
    Make sure to build releases off of the ``main`` branch, and check that all
    changes from ``develop`` have been merged before creating the release!
 
-1. Build the Project
+1. Build the project
 ~~~~~~~~~~~~~~~~~~~~
-#. Install extra dependencies (you only have to do this once)::
-
-    pip install -e '.[build-system]'
-
 #. Delete artefacts from previous builds, if applicable::
 
     rm dist/*
@@ -96,7 +113,7 @@ Steps to build releases are based on `Packaging Python Projects Tutorial`_
     python -m twine upload dist/*
 
 
-3. Create GitHub Release
+3. Create GitHub release
 ~~~~~~~~~~~~~~~~~~~~~~~~
 #. Create a tag and push to GitHub::
 

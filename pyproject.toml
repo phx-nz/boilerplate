@@ -14,14 +14,12 @@ authors = [
 dependencies = [
 ]
 
-[project.optional-dependencies]
-# Utilities for Project Maintainers
-"build-system" = ["build", "twine"]
-"docs-builder" = ["sphinx", "sphinx_rtd_theme"]
-"test-runner" = ["pytest", "tox"]
-
 [project.urls]
 Documentation = "https://github.com/phx-nz/boilerplate"
 Changelog = "https://github.com/phx-nz/boilerplate/releases"
 Issues = "https://github.com/phx-nz/boilerplate/issues"
 Repository = "https://github.com/phx-nz/boilerplate"
+
+[tool.autohooks]
+mode = "pipenv"
+pre-commit = ["autohooks.plugins.black", "autohooks.plugins.pylint", "autohooks.plugins.pytest", "autohooks.plugins.ruff"]

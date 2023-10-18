@@ -4,9 +4,25 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-boilerplate = {extras = ["docs-builder", "build-system", "test-runner"], file = ".", editable = true}
+boilerplate = { file = "." }
 
 [dev-packages]
+boilerplate = { file = ".", editable = true }
+autohooks = "*"
+autohooks-plugin-black = "*"
+autohooks-plugin-pylint = "*"
+autohooks-plugin-pytest = "*"
+autohooks-plugin-ruff = "*"
+black = "*"
+build = "*"
+ipython = "*"
+pylint = "*"
+pytest = "*"
+ruff = "*"
+sphinx = "*"
+sphinx_rtd_theme = "*"
+tox = "*"
+twine = "*"
 
 [requires]
 python_version = "3.12"
