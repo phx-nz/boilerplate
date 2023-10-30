@@ -37,8 +37,7 @@ You can manually run code quality checks with the following commands::
    # Check formatting:
    pipenv run black [file ...]
 
-   # Linting (run both for best coverage):
-   pipenv run pylint [file ...]
+   # Run linter
    pipenv run ruff check --fix [file ...]
 
 Running Unit Tests
@@ -47,7 +46,7 @@ To run the unit tests:
 
 #. Run tests with the ``tox`` command::
 
-   tox -p
+   pipenv run tox -p
 
 .. tip::
 
@@ -59,7 +58,7 @@ To run the unit tests:
    If you just want to run the tests in the current virtualenv, you can use this
    command instead to get faster feedback::
 
-      python -m pytest
+      pipenv run pytest
 
 Documentation
 -------------
@@ -74,7 +73,7 @@ To build the documentation locally:
 
 #. Build the documentation::
 
-      make html
+      pipenv run make html
 
 Documentation will be built in ``docs/_build/html``.
 

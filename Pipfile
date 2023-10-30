@@ -10,13 +10,11 @@ boilerplate = { file = "." }
 boilerplate = { file = ".", editable = true }
 autohooks = "*"
 autohooks-plugin-black = "*"
-autohooks-plugin-pylint = "*"
 autohooks-plugin-pytest = "*"
 autohooks-plugin-ruff = "*"
 black = "*"
 build = "*"
 ipython = "*"
-pylint = "*"
 pytest = "*"
 ruff = "*"
 sphinx = "*"

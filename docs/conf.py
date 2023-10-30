@@ -8,11 +8,8 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-# pylint: disable=invalid-name
 project = "Boilerplate"
-# pylint: disable=invalid-name,redefined-builtin
 copyright = "2023, PHX Limited"
-# pylint: disable=invalid-name
 author = "Phoenix Zerin"
 
 # -- General configuration ---------------------------------------------------
@@ -26,6 +23,5 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-# pylint: disable=invalid-name
 html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
